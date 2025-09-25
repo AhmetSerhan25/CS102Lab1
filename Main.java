@@ -11,7 +11,7 @@ public class Main {
         numbers = ArrayOperations.generateRandomArray(size);
 
         int choice = 0;
-        while(choice != 6){
+        while(choice != 6) {
             printMenu();  //(b) Display the menu options
             choice = scanner.nextInt();
 
