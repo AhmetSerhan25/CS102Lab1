@@ -6,7 +6,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter array size: "); 
+        System.out.print("Enter array size: "); 
         int size = scanner.nextInt();
         numbers = ArrayOperations.generateRandomArray(size);
 
@@ -26,12 +26,15 @@ public class Main {
 
             } else if(choice == 3) {
                 // Average & differences 
+                System.out.println("Differences: " + Arrays.toString(ArrayOperations.differencesFromAverage(numbers)));
 
             } else if(choice == 4) {
                 // Sum of even indexes
+                ArrayOperations.sumEvenIndexes(numbers);
 
             } else if(choice == 5) {
                 // Summ of odd indexes
+                ArrayOperations.sumOddIndexes(numbers);
 
             } else if(choice == 6) {
                 System.out.println("Exiting...");
@@ -51,6 +54,6 @@ public class Main {
         System.out.println("4. Sum of even indexes");
         System.out.println("5. Sum of odd indexes");
         System.out.println("6. Exit");
-        System.out.println("Choice: ");
+        System.out.print("Choice: ");
     }
 }
